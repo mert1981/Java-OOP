@@ -9,7 +9,7 @@ public abstract class Personel {
 	
 
 	public Personel(int id, String ad, String soyad, int maas) {
-		super();
+		
 		this.id = id;
 		this.ad = ad;
 		this.soyad = soyad;
