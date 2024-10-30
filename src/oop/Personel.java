@@ -41,5 +41,11 @@ public abstract class Personel {
 	public void setMaas(int maas) {
 		this.maas = maas;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Personel [id=" + id + ", ad=" + ad + ", soyad=" + soyad + ", maas=" + maas + "]";
+	}
 	
 }
