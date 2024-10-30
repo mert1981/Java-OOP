@@ -6,7 +6,14 @@ public class Main {
 		System.out.println(personel.getMaas());
 	}
 	
-	
+	public static void yoneticiMi(Personel personel) {
+		if(personel instanceof Mudur) {
+			System.out.println(personel+" bir yöneticidir.");
+		}
+		else {
+			System.out.println(personel.getAd()+ " bir yönetici değildir.");
+		}
+	}
 
 	public static void main(String[] args) {
 		
@@ -41,8 +48,9 @@ public class Main {
 		teknikSube.PersonelAra(8);
 		
 		System.out.println("---------------");
-		 maasiGoster(mudur);
+		maasiGoster(mudur);
 		 
+		yoneticiMi(mudur);
 		
 	}
 
